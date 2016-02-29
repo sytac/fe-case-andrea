@@ -8,7 +8,6 @@
   - At the bottom of the form all selections will be shown.
 - You are free to use any tool and/or framework you like, as long as it runs inside a browser and you can explain why that solution will be the most favorable.
 - Your implementation should be:
-   - tested
-   - visually attractive
-   - deployable
-   
+  - tested
+  - visually attractive
+  - deployable
