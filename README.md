@@ -11,3 +11,22 @@
       - tested
       - visually attractive
       - deployable
+
+
+### Data library
+The data are provided by a library set in the `service` folder. 
+
+This service can be accessed by a the global variable `Zugmeister` and provide a single method `fetchData`.
+
+```
+Zugmeister.fetchData(callBack)
+```
+
+the callback is called with the fulldata list as first parameter.
+
+
+```
+Zugmeister.fetchData(function(data) {
+  console.log(data);
+})
+```
