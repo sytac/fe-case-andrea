@@ -97,11 +97,15 @@ var Zugmeister;
       throw 'Callback not defined';
     }
     setTimeout(function() {
-      cb(data);
+      if (Math.floor(Math.random() * 20) === 2) {
+        cb('Fetch data error')
+      } else {
+        cb(null, data);
+      }
     }, 1000);
   }
 
   if (typeof module !== 'undefined') {
-    module.export = Zugmeister;
+    module.exports = Zugmeister;
   }
 })();

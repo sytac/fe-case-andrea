@@ -5,8 +5,12 @@
   <title>Zugmeister test</title>
   <script type="text/javascript" src="index.js"></script>
   <script type="text/javascript">
-    Zugmeister.fetchData(function(data) {
-      console.log(data);
+    Zugmeister.fetchData(function(err, data) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(data);
+      }
     })
   </script>
 </head>

@@ -22,11 +22,19 @@ This service can be accessed by a the global variable `Zugmeister` and provide a
 Zugmeister.fetchData(callBack)
 ```
 
-the callback is called with the fulldata list as first parameter.
-
+the callback is called with the full data list as first parameter.
 
 ```
-Zugmeister.fetchData(function(data) {
+Zugmeister.fetchData(function(err, data) {
+  console.log(data);
+})
+```
+
+The data library can be used as a node module.
+
+```
+var Zugmeister = require('zugmeister');
+Zugmeister.fetchData(function(err, data) {
   console.log(data);
 })
 ```
