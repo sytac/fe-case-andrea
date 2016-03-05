@@ -1,6 +1,8 @@
-# Planes, trains and automobiles - Zugmeister
+# Planes, trains and automobiles
 
-- Create a form which behaves as follows
+## The Traffic Meister application assignment
+
+ - Create a form which behaves as follows
     - It will display the following drop down menus
         - A list of vehicle types, on load there will be no vehicle selected.
         - A list of vehicle brands, on load and while there is no vehicle selected there will be no vehicle brand selected.
@@ -13,28 +15,29 @@
       - deployable
 
 
-### Data library
-The data are provided by a library set in the `service` folder. 
+## Data library
 
-This service can be accessed by a the global variable `Zugmeister` and provide a single method `fetchData`.
+The data are provided by a small service you can find in the `service` folder.
 
-```
-Zugmeister.fetchData(callBack)
-```
-
-the callback is called with the full data list as first parameter.
+This service can be accessed by a the global variable `trafficMeister` and provide a single method `fetchData`.
 
 ```
-Zugmeister.fetchData(function(err, data) {
+trafficMeister.fetchData(callBack);
+```
+
+The callback is called with the full data list as first parameter.
+
+```
+trafficMeister.fetchData(function(err, data) {
   console.log(data);
-})
+});
 ```
 
 The data library can be used as a node module.
 
 ```
-var Zugmeister = require('zugmeister');
-Zugmeister.fetchData(function(err, data) {
+var trafficMeister = require('traffic-meister');
+trafficMeister.fetchData(function(err, data) {
   console.log(data);
-})
+});
 ```
