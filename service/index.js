@@ -1,4 +1,4 @@
-var Zugmeister;
+var trafficMeister;
 
 (function() {
   var data = [
@@ -88,7 +88,7 @@ var Zugmeister;
     }
   ];
 
-  Zugmeister = {
+  trafficMeister = {
     fetchData: fetchData
   };
 
@@ -106,6 +106,6 @@ var Zugmeister;
   }
 
   if (typeof module !== 'undefined') {
-    module.exports = Zugmeister;
+    module.exports = trafficMeister;
   }
 })();
